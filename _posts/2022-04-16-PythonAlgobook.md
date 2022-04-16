@@ -1,4 +1,5 @@
 # Pythonからはじめるアルゴリズムトレードのメモ
+2022-04-08
 ## Chapter 2
 * mini conda をパッケージマネージャーおよび仮想環境として効率的な方法
 * Dockerを用いて mini conda なども設定可能．
@@ -27,10 +28,25 @@
   * OOSでも最初にまごつくとある．これは十分な期間のリターンを予想しているから当然．（虎穴に入らずんば虎子を得ず）
   * OOSでも優位性がありそうにみえる．lagだけでなく特徴量を込みすると改善する
 
+---
+
+2022-04-16
+# M1 + miniforge -> python env. 
+Pythonの環境設定はM1の場合，全般的に癖がある．とても参考になったのは
+
+[【M1 Pro/Max対応】M1 Mac環境構築ベストプラクティス](https://qiita.com/c60evaporator/items/aef6cc1581d2c4676504)
+
+おかげで↓できるようになった
+* 環境の設定と使用をコマンドベースで実行．
+  * vscodeでpathを通してjupyterをvscodeで走らせることも．
+  * git clone を用いて環境を揃えてquick startなど．
+  * numeraiはlightgbmは(forge)condaを叩いて出ないとインストールできずマニュアルで行った．
+  * Dockerなるものをざっくりと理解し，それから環境設定をvscode周りで展開
+
 
 
 ### To do
-- [ ] dockerを用いて上のmini conda環境を揃えてみる
+- [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.22.
 - [ ] DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定
 
 
