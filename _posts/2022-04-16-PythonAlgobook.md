@@ -1,4 +1,7 @@
 # Pythonからはじめるアルゴリズムトレードのメモ
+
+[Github: Python for Algorithmic Trading](https://github.com/yhilpisch/py4at)
+
 2022-04-08
 ## Chapter 2
 * mini conda をパッケージマネージャーおよび仮想環境として効率的な方法
@@ -42,6 +45,45 @@ Pythonの環境設定はM1の場合，全般的に癖がある．とても参考
   * git clone を用いて環境を揃えてquick startなど．
   * numeraiはlightgbmは(forge)condaを叩いて出ないとインストールできずマニュアルで行った．
   * Dockerなるものをざっくりと理解し，それから環境設定をvscode周りで展開
+
+* Chapter 6までコードも追う．自分用に環境のメモやバージョンによる書き換えコードなど; 
+
+```
+conda create -n algo python=3.9
+conda activate algo
+git clone https://github.com/yhilpisch/py4at.git 
+# to /Users/ttsuchiya/py4at
+conda install numpy # start from Ch4
+conda install pandas
+conda install matplotlib
+conda install scipy
+conda install scikit-learn
+
+# tf のインストール
+conda install -c apple tensorflow-deps
+conda install -c apple tensorflow-deps==2.6.0
+python -m pip install tensorflow-metal
+
+# 以下は書き換え
+# https://stackoverflow.com/questions/62707558/importerror-cannot-import-name-adam-from-keras-optimizers
+
+#from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
+
+
+# 昔のmethodみたい．https://teratail.com/questions/358850
+# 以下を参考
+# https://stackoverflow.com/questions/68836551/keras-attributeerror-sequential-object-has-no-attribute-predict-classes
+
+# pred = model.predict_classes(training_data_[cols])
+predict_x=model.predict(training_data_[cols]) 
+pred =np.argmax(predict_x,axis=1)
+
+
+# pred = model.predict_classes(test_data_[cols])
+predict_x=model.predict(test_data_[cols]) 
+pred =np.argmax(predict_x,axis=1)
+```
 
 
 
