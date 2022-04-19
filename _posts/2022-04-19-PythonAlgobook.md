@@ -118,13 +118,30 @@ model.compile(optimizer=optimizer,
  * ケーリー基準の説明と実験はここの章
  * transaction cost込みでも種々の特徴量を入れてMLすると強い．
 
+# Applications
+## Crypt
+[Chapter 10 code](https://colab.research.google.com/drive/189PsD2FD25tR8UnCuHuOMr4C2BzqVv-Q#scrollTo=vipOuQMMa47-)
 
- 
+* GMOの1m足でNNしてみる．spread = 0.00012
+
+![image](https://user-images.githubusercontent.com/102901806/163902559-9ae0bc18-ed00-4e0d-99f5-aa0decb43277.png)
+
+* 5min足．spread = 0.00012
+
+
+![image](https://user-images.githubusercontent.com/102901806/163903501-e64d3896-7067-4fb7-9519-0fb60f81b452.png)
+
+* 1分足から長くしてやると伸ばせば伸ばすほど優位性について期待できるかもしれない．
+4h足．
+![image](https://user-images.githubusercontent.com/102901806/163905098-d15b43fe-88bb-4ed5-9f25-d0c4ff08a51c.png)
+
+
+* strategy と strategy_tc はほぼ同じ．つまりtcはかなり通貨に比べて小さい．なのにボラはある．
 
 
 ### To do
-- [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.22.
+- [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.17.
 - [ ] DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定
-- [ ] シンプルなlagと特徴量でNNしてみるとnumeraiやcryptはどうなるだろうか．
+- [x] シンプルなlagと特徴量でNNしてみるとnumeraiやcryptはどうなるだろうか．2022.04.19
 
 
