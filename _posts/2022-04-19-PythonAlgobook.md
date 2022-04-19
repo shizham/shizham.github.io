@@ -85,10 +85,46 @@ predict_x=model.predict(test_data_[cols])
 pred =np.argmax(predict_x,axis=1)
 ```
 
+---
+2022-04-19
+
+## Chapter 4 code
+[Chapter 4 code](https://colab.research.google.com/drive/17CpQwKYyF-d5ZyDQLtg61lufA44rnBaH)
+いろいろ書いたのに間違って消してしまった．．．
+* 単純な戦略ではparameterのオーバーフィットになりかねない．
+
+## Chapter 5 code
+[Chapter 5 code](https://colab.research.google.com/drive/16lQZHd8m6gkJoLUv6voLjRZsK62Ctl6r#scrollTo=eJI1IjTP7wbJ)
+
+* lagを使って予想する．線形回帰問題にすり替える．値を求めるのは難しいので符号，つまり分類問へ．
+* Logisticは判断が難しい（合格ラインギリギリで合格したものと落ちたものにひっぱられる）ところに非線形構造を入れたもの．transaction cost入れても悪くはない．
+* DNNでやる．model.fitで統一的に書ける．
+```
+set_seeds()
+model = Sequential()
+model.add(Dense(64, activation='relu',
+        input_shape=(lags,)))
+model.add(Dense(64, activation='relu'))
+model.add(Dense(1, activation='sigmoid')) # <5>
+model.compile(optimizer=optimizer,
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+```
+ * 適当にデータをこしらえてvalidationしても悪くなさそう．
+ * 異なる特徴量，moment，ヴォラ，distanceを入れるとかなり強くなる．
+ 
+ ## Chapter 10 code
+ [Chapter 10 code](https://colab.research.google.com/drive/189PsD2FD25tR8UnCuHuOMr4C2BzqVv-Q#scrollTo=4AGKJyIUW77L)
+ * ケーリー基準の説明と実験はここの章
+ * transaction cost込みでも種々の特徴量を入れてMLすると強い．
+
+
+ 
 
 
 ### To do
 - [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.22.
 - [ ] DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定
+- [ ] シンプルなlagと特徴量でNNしてみるとnumeraiやcryptはどうなるだろうか．
 
 
