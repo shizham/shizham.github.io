@@ -1,4 +1,4 @@
-# Pythonからはじめるアルゴリズムトレードのメモ
+# Python for Algorithmic Tradingのメモ
 
 [Github: Python for Algorithmic Trading](https://github.com/yhilpisch/py4at)
 
