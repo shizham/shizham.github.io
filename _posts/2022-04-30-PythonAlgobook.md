@@ -2,6 +2,12 @@
 
 [Github: Python for Algorithmic Trading](https://github.com/yhilpisch/py4at)
 
+$$
+f(x)= \sum_{k=0}^{\infty} \frac{ f^{(k)}(x_0)}{n!} \left( x-x_0 \right)^k 
+$$
+
+文中の数式$y = f(x)$のテスト。
+
 2022-04-08
 ## Chapter 2
 * mini conda をパッケージマネージャーおよび仮想環境として効率的な方法
@@ -141,7 +147,7 @@ model.compile(optimizer=optimizer,
 
 ### To do
 - [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.17.
-- [ ] DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定
+- [x] ~DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定~ Tailescaleでとりあえず，大きめのマシーンをリモートで動かせるようにしたのでよしとする．
 - [x] シンプルなlagと特徴量でNNしてみるとnumeraiやcryptはどうなるだろうか．2022.04.19
 
 
