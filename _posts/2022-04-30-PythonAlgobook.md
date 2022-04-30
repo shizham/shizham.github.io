@@ -138,7 +138,22 @@ model.compile(optimizer=optimizer,
 ![image](https://user-images.githubusercontent.com/102901806/163905098-d15b43fe-88bb-4ed5-9f25-d0c4ff08a51c.png)
 
 
-* strategy と strategy_tc はほぼ同じ．つまりtcはかなり通貨に比べて小さい．なのにボラはある．
+* ~strategy と strategy_tc はほぼ同じ~．つまりtcはかなり通貨に比べて小さい．なのにボラはある．
+
+## 間違っているところ発見．spreadは絶対値．
+
+spreadは絶対値の定義だった．アウトオブサンプルでも強いのだが．．．．2022.04.22
+```
+path = ... df_ohlcv_GMO_BTC_JPY_1m.pkl'
+spread = 3000
+raw=raw.shift(50000).tail(10000).copy()
+```
+
+[MLbased(Py4algo)](https://colab.research.google.com/drive/1eU183Th0hKIxY6AzXK5qPg041HhilJqP#scrollTo=OxkTtYjDNLg6)
+
+![image](https://user-images.githubusercontent.com/102901806/166086905-7a37d68f-1a3f-45fd-8120-7eb6f19b85f6.png)
+
+![image](https://user-images.githubusercontent.com/102901806/166086935-84a358fc-9232-4ff8-9de1-7db28f599d4f.png)
 
 
 ### To do
