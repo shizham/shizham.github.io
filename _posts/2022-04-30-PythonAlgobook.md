@@ -140,7 +140,7 @@ model.compile(optimizer=optimizer,
 
 * ~strategy と strategy_tc はほぼ同じ~．つまりtcはかなり通貨に比べて小さい．なのにボラはある．
 
-## 間違っているところ発見．spreadは絶対値．
+### 間違っているところ発見．spreadは絶対値．
 
 spreadは絶対値の定義だった．アウトオブサンプルでも強いのだが．．．．2022.04.22
 ```
@@ -155,7 +155,7 @@ raw=raw.shift(50000).tail(10000).copy()
 
 ![image](https://user-images.githubusercontent.com/102901806/166086935-84a358fc-9232-4ff8-9de1-7db28f599d4f.png)
 
-## overfitっぽい．
+### overfitっぽい．
 
 7Tよいかとtc込めて他の区間でやってみる．
 
@@ -165,10 +165,21 @@ raw=raw.shift(50000).tail(10000).copy()
 richmanbtcさんは特徴量を非定常的に選ぶことと分割したp値を極端に小さく取れる戦略を採用していた．
 なるほど．
 
+# Stock and DNN using Funds  
+
+[StockVersion](https://colab.research.google.com/drive/1mKpapSlPBgDx5AKc2cjCexB4AbJKAnZU?hl=ja#scrollTo=RT6j8KYNVsMM)
+
+Out of Sampleでもだいぶ強い．
+
+
+![image](https://user-images.githubusercontent.com/102901806/166096825-dc9933ce-842e-4633-8b15-86ac6500ac26.png)
+
+
 ### To do
 - [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.17.
 - [x] ~DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定~ Tailescaleでとりあえず，大きめのマシーンをリモートで動かせるようにしたのでよしとする．
-- [x] シンプルなlagと特徴量でNNしてみるとcryptはどうなるだろうか．2022.04.19 -> 案の定，コストとの戦い．
-- [ ] シンプルなlagと特徴量でNNしてみるとnumeraiはどうなるだろうか．2022.04.19
+- [x] シンプルなlagと特徴量でDNNしてみるとcryptはどうなるだろうか．2022.04.19 -> 案の定，コストとの戦い．
+- [ ] シンプルなlagと特徴量でDNNしてみるとstockはどうなるだろうか．2022.04.19 -> かなり有望．
+- [ ] シンプルなlagと特徴量でDNNしてみるとnumeraiはどうなるだろうか．2022.04.19
 
 
