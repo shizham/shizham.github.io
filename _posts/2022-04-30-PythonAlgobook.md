@@ -2,9 +2,6 @@
 
 [Github: Python for Algorithmic Trading](https://github.com/yhilpisch/py4at)
 
-$$ \int $$
-
-\[ \int \]
 
 
 2022-04-08
