@@ -164,13 +164,20 @@ raw=raw.shift(50000).tail(10000).copy()
 このことから時間に関する非定常性が鍵を握りそう．
 richmanbtcさんは特徴量を非定常的に選ぶことと分割したp値を極端に小さく取れる戦略を採用していた．
 なるほど．
-
-# Stock and DNN using Funds  
+#  Application to portfolio
 
 [StockVersion](https://colab.research.google.com/drive/1mKpapSlPBgDx5AKc2cjCexB4AbJKAnZU?hl=ja#scrollTo=RT6j8KYNVsMM)
 
-Out of Sampleでもだいぶ強い．
+## ranking method
 
+嘘くさいくらい強い．
+
+![image](https://user-images.githubusercontent.com/102901806/166109341-eb71e13a-6a85-42db-ab0e-6c245888d3aa.png)
+
+
+## DNN model
+
+Out of Sampleでもだいぶ強い．
 
 ![image](https://user-images.githubusercontent.com/102901806/166096825-dc9933ce-842e-4633-8b15-86ac6500ac26.png)
 
