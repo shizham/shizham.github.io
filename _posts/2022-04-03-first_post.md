@@ -30,4 +30,10 @@ Jupyterやmarkdown (vscode)などに置き換えてやったほうが話が早�
 
 https://shizham.github.io/shizlog/
 
+## なるほどeditorをつかうのか
+
+$$ \int $$
+で数式はpreviewでは見えないが投稿反映されるとみられる．
+だからみんなvscodeなどを使って，それをpostするのね．
+
 
