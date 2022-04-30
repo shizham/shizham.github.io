@@ -19,3 +19,10 @@ use_math:
 
 [A hack for showing LaTeX formulas in GitHub markdown.md](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b)
 
+## fastpagesに移行した方がいいかも
+
+githubで完結しようとするとlatexなど面倒が起きている．
+Jupyterやmarkdown (vscode)などに置き換えてやったほうが話が早いかも．
+
+
+
