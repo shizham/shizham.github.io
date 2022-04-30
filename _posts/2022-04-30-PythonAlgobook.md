@@ -144,6 +144,7 @@ model.compile(optimizer=optimizer,
 ### To do
 - [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.17.
 - [x] ~DropletsについてRSA公開鍵と秘密鍵を作成してセキュア環境の設定~ Tailescaleでとりあえず，大きめのマシーンをリモートで動かせるようにしたのでよしとする．
-- [x] シンプルなlagと特徴量でNNしてみるとnumeraiやcryptはどうなるだろうか．2022.04.19
+- [x] シンプルなlagと特徴量でNNしてみるとcryptはどうなるだろうか．2022.04.19 -> 案の定，コストとの戦い．
+- [ ] シンプルなlagと特徴量でNNしてみるとnumeraiはどうなるだろうか．2022.04.19
 
 
