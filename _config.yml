@@ -14,7 +14,8 @@ github_username: shizham
 email:
 twitter_username:
 
-# Set this to true to get LaTeX math equation support
+# Set this to true to get LaTeX math equation support 
+# 2022.04.30 add
 use_math: true
 
 # Add your Google Analytics ID here if you have one and want to use it
