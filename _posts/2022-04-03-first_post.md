@@ -24,5 +24,10 @@ use_math:
 githubで完結しようとするとlatexなど面倒が起きている．
 Jupyterやmarkdown (vscode)などに置き換えてやったほうが話が早いかも．
 
+やってみたけれども
+* colaboの数式の部分はpage内では表示されないらしい．
+* colaboで連携してアップすると04-30が勝手に04_30になってしまって認識しない．
+
+https://shizham.github.io/shizlog/
 
 
