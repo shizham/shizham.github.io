@@ -155,6 +155,15 @@ raw=raw.shift(50000).tail(10000).copy()
 
 ![image](https://user-images.githubusercontent.com/102901806/166086935-84a358fc-9232-4ff8-9de1-7db28f599d4f.png)
 
+## overfitっぽい．
+
+7Tよいかとtc込めて他の区間でやってみる．
+
+![image](https://user-images.githubusercontent.com/102901806/166087348-54439cf3-e9a2-42b4-9f0a-bc311c236480.png)
+
+このことから時間に関する非定常性が鍵を握りそう．
+richmanbtcさんは特徴量を非定常的に選ぶことと分割したp値を極端に小さく取れる戦略を採用していた．
+なるほど．
 
 ### To do
 - [x] dockerを用いて上のmini conda環境を揃えてみる. 2022.04.17.
