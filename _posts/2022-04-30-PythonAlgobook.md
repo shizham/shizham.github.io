@@ -140,7 +140,8 @@ model.compile(optimizer=optimizer,
 
 * ~strategy と strategy_tc はほぼ同じ~．つまりtcはかなり通貨に比べて小さい．なのにボラはある．
 
-### 間違っているところ発見．spreadは絶対値．
+### 間違っているところ発見．spreadは絶対値．[MLbased(Py4algo)](https://colab.research.google.com/drive/1eU183Th0hKIxY6AzXK5qPg041HhilJqP#scrollTo=OxkTtYjDNLg6)
+
 
 spreadは絶対値の定義だった．アウトオブサンプルでも強いのだが．．．．2022.04.22
 ```
@@ -149,7 +150,6 @@ spread = 3000
 raw=raw.shift(50000).tail(10000).copy()
 ```
 
-[MLbased(Py4algo)](https://colab.research.google.com/drive/1eU183Th0hKIxY6AzXK5qPg041HhilJqP#scrollTo=OxkTtYjDNLg6)
 
 ![image](https://user-images.githubusercontent.com/102901806/166086905-7a37d68f-1a3f-45fd-8120-7eb6f19b85f6.png)
 
@@ -164,9 +164,9 @@ raw=raw.shift(50000).tail(10000).copy()
 このことから時間に関する非定常性が鍵を握りそう．
 richmanbtcさんは特徴量を非定常的に選ぶことと分割したp値を極端に小さく取れる戦略を採用していた．
 なるほど．
-#  Application to portfolio
+#  Application to portfolio [StockVersion](https://colab.research.google.com/drive/1mKpapSlPBgDx5AKc2cjCexB4AbJKAnZU?hl=ja#scrollTo=RT6j8KYNVsMM)
 
-[StockVersion](https://colab.research.google.com/drive/1mKpapSlPBgDx5AKc2cjCexB4AbJKAnZU?hl=ja#scrollTo=RT6j8KYNVsMM)
+
 
 ## ranking method
 
