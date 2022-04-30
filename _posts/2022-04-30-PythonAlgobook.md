@@ -2,11 +2,10 @@
 
 [Github: Python for Algorithmic Trading](https://github.com/yhilpisch/py4at)
 
-$$
-f(x)= \sum_{k=0}^{\infty} \frac{ f^{(k)}(x_0)}{n!} \left( x-x_0 \right)^k 
-$$
+$$ \int $$
 
-文中の数式$y = f(x)$のテスト。
+\[ \int \]
+
 
 2022-04-08
 ## Chapter 2
