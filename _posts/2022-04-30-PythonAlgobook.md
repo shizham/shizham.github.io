@@ -174,6 +174,12 @@ richmanbtcさんは特徴量を非定常的に選ぶことと分割したp値を
 
 ![image](https://user-images.githubusercontent.com/102901806/166109341-eb71e13a-6a85-42db-ab0e-6c245888d3aa.png)
 
+やっぱり嘘でしたので修正．でも優位性はありそう．```window=1```
+![image](https://user-images.githubusercontent.com/102901806/166126737-ef540c3f-304e-4bda-a844-045addf3f7f3.png)
+
+で，やはり強いという．．．．
+![image](https://user-images.githubusercontent.com/102901806/166126781-adee5c87-4723-4ccd-9d91-e3636b5e4f23.png)
+
 
 ## DNN model
 
