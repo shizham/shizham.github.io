@@ -4,17 +4,15 @@
 
 [Relative Strength Strategies](https://colab.research.google.com/drive/1mKpapSlPBgDx5AKc2cjCexB4AbJKAnZU?hl=ja#scrollTo=GtXFRIGUtGjc)
 
-* 3,6,12mのリターンを計算し，順位をつけ，上位3つをセレクト
-* 12SMAより上である条件のもとでソートして上記3つのうちで満たすものに均等配分
-* 結論としては優位性は見られなかった．
+* ランキングソートを行う．例えば 3,6,12mのリターンを計算し，順位をつけ，上位3つを選出
+* フィルターとして，12SMAより上である条件のもとでソートして上記3つのうちで満たすものに均等配分
 
-![image](https://user-images.githubusercontent.com/102901806/166148189-59e205a9-8408-4f2f-9b08-489c0174c7e7.png)
+![image](https://user-images.githubusercontent.com/102901806/166391106-f3a07a01-23d5-4304-9344-71c90bc67bb6.png)
 
-参考までに同じ期間でのポートフォリオのデータ．
-
-![image](https://user-images.githubusercontent.com/102901806/166148184-63a38f4c-0ea4-4421-859b-5ebcfcd26a98.png)
+![image](https://user-images.githubusercontent.com/102901806/166391115-d2f27ea7-9caa-47a9-afc3-7c633e1b7a1b.png)
 
 
-むしろこの間の勝馬に次から次に乗る戦略のほうが強いような．コストで消え失せるかもしれないけど．
+![image](https://user-images.githubusercontent.com/102901806/166391163-f1f9cba5-fc2e-4431-ad70-40be5c2969ba.png)
 
-![image](https://user-images.githubusercontent.com/102901806/166148619-7c475257-60d4-4ae3-adca-064704fab80f.png)
+* コロナ相場の米株の強さはまさに異常そのもの．直近で弱くなると優位性が見られる．
+* 細かい粒でやればやるほど収益機会が増すので**コストとの戦い**になりそう．
